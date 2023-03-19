@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Worksite</title>
+    <script type="text/javascript" src="jax-dateTest.js"></script>   
+</head>
+<body>
+
+    <h1>留言板</h1>
+    你的回应：
+    <br/><label for="userid">ID:</label> <input type="text" id="userid" value="你的名字…">
+    <br/><label for="content">评论:</label> <input type="text" id="content" value="你的评论…">
+    <script type="text/javascript" src="jax-dateTest.js"></script>
+    <button onclick="jaxPost()">发送评论</button>
+    <br/>
+    <h2>留言板内容</h2>
+    <button onclick="retrieve()">刷新聊天记录</button>
+    <div id="board"></div>
+
+
+</body>
