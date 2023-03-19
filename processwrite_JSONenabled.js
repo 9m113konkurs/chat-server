@@ -9,13 +9,6 @@
         // req.on('data', function (data) {body += data});
         req.on('data', (chunk) => {
           //body is JSON-converted string that was originally a JSON (bruh)
-          //SCREW THIS IM OUTTA HERE
-          //**retards to string manipulation */
-          //this is defintely some shithole that nees to be fixed
-          //damn you dont use JSON OBJECT
-          //USE A FUCKING ARRAYsa
-          //YOU CANT HAVE SAME-NAMED STUFF IN JSON FUCK U
-          //rewrite this shit lmfaooooooooooooooooooooooooooooooooooooo
           body = JSON.parse(chunk.toString())
           let tt = JSON.parse(fs.readFileSync('data3.json', 'utf8'));
           console.log(tt)
