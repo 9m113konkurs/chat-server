@@ -20,7 +20,7 @@ function jaxPost() {
 
     //jax sends payload into space and retrieves space station
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://180.76.152.39:29999", true);
+    xhttp.open("POST", "http://youripaddress:29999", true);
     xhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8')
     //dont send json, stringify it
     xhttp.send(payload);  
@@ -37,7 +37,7 @@ function jaxPost() {
 function retrieve() {
     // just retrieve
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://180.76.152.39:29999", true);
+    xhttp.open("GET", "http://youripaddress:29999", true);
     xhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8')
 
 
